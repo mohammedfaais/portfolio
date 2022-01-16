@@ -91,7 +91,7 @@ li {
 .project-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 50px;
+  padding: 30px;
   gap: 50px;
   text-align: center;
 }
@@ -279,6 +279,36 @@ i {
     padding-top: 10px;
     font-size: 14px;
     padding-left: 10px;
+  }
+
+  .project-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 85%;
+  }
+
+  .bg-banner {
+    background-image: linear-gradient(
+        45deg,
+        rgba(171, 172, 162, 0.62),
+        rgba(151, 204, 176, 0.58)
+      ),
+      url(/img/photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 
