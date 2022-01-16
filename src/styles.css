@@ -265,6 +265,7 @@ i {
 
 .copyright {
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 425px) {
@@ -300,7 +301,7 @@ i {
         rgba(171, 172, 162, 0.62),
         rgba(151, 204, 176, 0.58)
       ),
-      url(/img/photo.jpg);
+      url(./img/photo.jpg);
     background-size: cover;
     background-position: center;
     height: 350px;
