@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/42cb7c27ec.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42cb7c27ec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -13,11 +13,15 @@
       <nav>
         <div class="navbar">
             <ul class="navbar-list">
-            <li class="navbar-list-item">Home</li>
-            <li class="navbar-list-item">Projects</li>
-            <li class="navbar-list-item">About</li>
+            <li class="navbar-list-item"><a href="./"  class="nav-link">Home</a></li>
+            <li class="navbar-list-item"><a href="#project"  class="nav-link">Projects</a></li>
+            <li class="navbar-list-item"><a href="#about"  class="nav-link">About</a></li>
           </ul>
-        
+            <div class="humburger">
+             <span class="bar-1"></span>
+             <span class="bar-2"></span>
+             <span class="bar-3"></span>
+            </div>
         </div>
       </nav>
     </div>
@@ -67,7 +71,7 @@
     </div>
     <div class="about-section">
    
-          <h2 class="about-head">ABOUT ME</h2>
+          <h2 class="about-head" id="about">ABOUT ME</h2>
           <p class="about-para">Hello there, My name is Mohammed Faais and I'm currently living in chennai and I have coding knowledge of <em>JavaScript</em>, <em>HTML</em>, <em>CSS</em>  and <em>React.js</em></p>
           <div class="about-links">
             <a target="_blank" href="https://github.com/mohammedfaais" title="GitHub"><i class="fab fa-github about-icons" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal repeat"></i></a>
@@ -128,5 +132,6 @@
        </div>
     </div>
     </div>
+    <script src="./src/script.js"></script>
   </body>
 </html>
