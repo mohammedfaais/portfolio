@@ -1,15 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .navbar {
-  background-color: #4d4d4d;
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  /* background-color:#4d4d4d; */
+  background-color: white;
+  color: black;
+  overflow: hidden;
 }
 
 ul,
@@ -17,43 +23,62 @@ li {
   list-style-type: none;
 }
 
-.navbar-list {
-  display: flex;
-  justify-content: flex-end;
+.name-header{
+  color: #4A5FC1;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0;
 }
 
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+
+}
 .navbar-list-item {
-  padding: 10px;
+  margin: 0 10px;
   font-size: 18px;
 }
 
 .nav-link {
-  color: white;
+
+  color: #2c405e;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+ 
 }
 
-.humburger {
-  display: none;
-  padding: 5px;
-  cursor: pointer;
-  float: right;
+.nav-link::after{
+  content: '';
+  position: absolute;
+  left: 0%; 
+  bottom: -18px;
+  border: 1px solid black;
+  width: 100%;
+
+
 }
 
-.bar-1,
-.bar-2,
-.bar-3 {
-  display: block;
-  width: 35px;
-  height: 3px;
-  margin: 5px;
-  background-color: white;
-  transition: 0.4s;
+.nav-link:hover::after{
+  transform: translateY(-15px);
+  transition: transform 0.5s ease;
+  
 }
 .brandName {
   font-size: 25px;
   color: #fff;
   padding: 10px 10px 10px 10px;
+}
+
+.hamburger{
+ font-size: 24px;
+ background-color: transparent;
+ border: 0;
+ display: none;
 }
 
 .bg-banner {
@@ -243,7 +268,7 @@ li {
   background-color: #f5f7ff;
 }
 
-i {
+.skill-section i {
   color: #4a5fc1;
   font-size: 50px;
 }
@@ -316,35 +341,39 @@ i {
 }
 
 @media (max-width: 768px) {
-  * {
-    overflow: hidden;
-  }
-  .humburger {
-    display: block;
-  }
-  .change .bar-1 {
-    transform: rotate(45deg) translate(8px, 3px);
-  }
-  .change .bar-2 {
-    opacity: 0;
-  }
-  .change .bar-3 {
-    transform: rotate(-45deg) translate(8px, -3px);
+  .navbar-list{
+     position: fixed;
+     flex-direction: column;
+     background-color: #FFFFFF;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+     top: 80px;
+     left: 15%;
+     width: 70%;
+     height: 100px;
+     text-align: center;
+     transform: translateX(140%);
+     transition: transform 0.3s ease-in;
+     overflow: hidden;
   }
 
-  .navbar-list {
-    position: absolute;
-    top: 6vh;
-    right: 0px;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0, 0.75);
-    border-radius: 0px 0px 0px 20px;
-    transition: transform 0.3s ease-in;
-    transform: translate(100%);
-  }
-  .nav-change {
+
+  
+  .navbar-list.show{
     transform: translate(0%);
   }
+  .nav-link::after{
+   display: none;
+  }
+
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  
+  .navbar-list-item{
+    padding: 4px;
+  }
+
 }
 
 @media (max-width: 425px) {
