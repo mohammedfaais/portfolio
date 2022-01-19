@@ -410,15 +410,13 @@ li {
     cursor: pointer;
   }
   
-  .navbar-list-item{
-    padding: 4px;
-  }
-  .navbar{
-    margin: 10px;
-  }
+  
 }
 
 @media (max-width: 425px) {
+.name-header{
+  margin: 1px 0px;
+}
   .sk {
     padding: 5px;
   }
