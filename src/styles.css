@@ -42,7 +42,9 @@ li {
   margin: 0 10px;
   font-size: 18px;
 }
-
+.hamburger{  
+  display:none;   
+ } 
 .nav-link {
 
   color: #2c405e;
@@ -50,6 +52,10 @@ li {
   text-decoration: none;
   position: relative;
  
+}
+.nav-link:hover{
+  color: #4a5fc1;
+  transition: 0.5s;
 }
 
 .nav-link::after{
@@ -76,9 +82,9 @@ li {
 
 .hamburger{
  font-size: 24px;
- background-color: transparent;
+
  border: 0;
- display: none;
+ /* display: none; */
 }
 
 .bg-banner {
@@ -346,8 +352,9 @@ li {
      flex-direction: column;
      background-color: #FFFFFF;
      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-     top: 80px;
-     left: 15%;
+     top: 60px;
+     /* left: 15%; */
+     right: 0%;
      width: 70%;
      height: 100px;
      text-align: center;
@@ -356,8 +363,32 @@ li {
      overflow: hidden;
   }
 
+  .nav-link:hover{
+    color: #4a5fc1;
+  }
 
-  
+  .hamburger{
+    cursor: pointer;
+  }
+  .line-1,.line-2,.line-3{
+    display: block;
+    margin: 5px auto;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: 0.4s;  
+  }
+  .open .line-1{
+   transform: rotate(45deg) translate(8px,3px) ;
+  }
+
+  .open .line-2{
+   opacity: 0;
+  }
+
+  .open .line-3{
+    transform: rotate(-45deg) translate(8px,-3px);
+  }
   .navbar-list.show{
     transform: translate(0%);
   }
