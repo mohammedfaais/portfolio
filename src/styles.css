@@ -8,7 +8,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar {
-  margin: 8px;
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
