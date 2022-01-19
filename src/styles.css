@@ -24,9 +24,9 @@ li {
 }
 
 .name-header{
-  color: #4A5FC1;
+  font-size: 20px;
+  color: #4A5FC1; 
   text-transform: uppercase;
-  line-height: 1em;
   margin: 0;
 }
 
@@ -75,9 +75,7 @@ li {
   
 }
 .brandName {
-  font-size: 25px;
   color: #fff;
-  padding: 10px 10px 10px 10px;
 }
 
 .hamburger{
@@ -280,6 +278,7 @@ li {
 }
 
 .about-icons {
+  color: #4a5fc1;
   font-size: 30px;
   padding: 10px;
 }
@@ -303,14 +302,15 @@ li {
   padding-top: 20px;
 }
 
-.social-links {
+.social-links  {
   display: flex;
   position: relative;
 }
 
-.fa:hover {
+
+/* .fa:hover {
   color: white;
-}
+} */
 
 .contact-form {
   display: grid;
@@ -326,24 +326,28 @@ li {
   right: 0;
 } */
 
-.footer {
-  background-color: #161515;
-  width: 100%;
+.footer{
+  padding: 10px 0px;
+  background-color: black;
   color: white;
-  display: grid;
-  justify-content: flex-end;
-}
-
-.footer-heading {
-  padding-top: 10px;
-  font-size: 18px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.copyright {
-  margin-left: 20px;
-  margin-bottom: 10px;
+.footer-heading{
+  font-size: 1.2rem;
+}
+ 
+.footer-icon{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-bottom{
+ margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -351,16 +355,20 @@ li {
      position: fixed;
      flex-direction: column;
      background-color: #FFFFFF;
-     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-     top: 60px;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+     top: 49px;
      /* left: 15%; */
      right: 0%;
-     width: 70%;
+     width: 30%;
      height: 100px;
      text-align: center;
      transform: translateX(140%);
      transition: transform 0.3s ease-in;
      overflow: hidden;
+  }
+  .skill-section i {
+    color: #4a5fc1;
+    font-size: 40px;
   }
 
   .nav-link:hover{
@@ -369,6 +377,7 @@ li {
 
   .hamburger{
     cursor: pointer;
+    justify-content: flex-end;
   }
   .line-1,.line-2,.line-3{
     display: block;
