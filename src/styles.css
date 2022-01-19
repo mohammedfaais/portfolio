@@ -10,7 +10,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  margin: 7px 10px;
   flex-wrap: wrap;
   /* background-color:#4d4d4d; */
   background-color: white;
@@ -413,7 +413,9 @@ li {
   .navbar-list-item{
     padding: 4px;
   }
-
+  .navbar{
+    margin: 10px;
+  }
 }
 
 @media (max-width: 425px) {
