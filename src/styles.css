@@ -364,7 +364,7 @@ li {
      flex-direction: column;
      background-color: #FFFFFF;
      box-shadow: 0 3px 5px rgba(0,0,0,0.4);
-     top: 42px;
+     top: 47px;
      /* left: 15%; */
      right: 0%;
      width: 30%;
@@ -376,7 +376,7 @@ li {
   }
 
   .navbar-list-item{
-    padding: 3px;
+    padding: 5px 0px;
   }
 
   .skill-section i {
