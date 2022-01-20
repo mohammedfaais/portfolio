@@ -254,10 +254,11 @@ li {
   color: #1a2238;
   padding-top: 15px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .about-head {
-  padding: 30px 0px;
+  padding: 20px 0px;
   font-size: 28px;
   text-align: center;
 }
@@ -288,7 +289,8 @@ li {
 .skill-list {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  padding-bottom: 20px
 }
 
 .fa {
@@ -318,8 +320,12 @@ li {
   display: grid;
   place-items: center;
   margin-top: 40px;
+
 }
 
+.contact{
+  padding-bottom: 20px
+}
 /* .copyright {
   display: flex;
   justify-content: flex-end;
