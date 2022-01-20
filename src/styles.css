@@ -143,7 +143,7 @@ li {
 
 .project-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 50px;
   padding-top: 10px;
   gap: 50px;
@@ -364,7 +364,7 @@ li {
      flex-direction: column;
      background-color: #FFFFFF;
      box-shadow: 0 3px 5px rgba(0,0,0,0.4);
-     top: 49px;
+     top: 42px;
      /* left: 15%; */
      right: 0%;
      width: 30%;
@@ -374,6 +374,11 @@ li {
      transition: transform 0.3s ease-in;
      overflow: hidden;
   }
+
+  .navbar-list-item{
+    padding: 3px;
+  }
+
   .skill-section i {
     color: #4a5fc1;
     font-size: 40px;
