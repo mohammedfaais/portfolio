@@ -185,6 +185,7 @@ li {
   color: #3952a3;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .contact {
