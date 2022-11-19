@@ -365,7 +365,7 @@ li {
 
 @media (max-width: 768px) {
   .navbar-list{
-     position: fixed;
+     position: absolute;
      flex-direction: column;
      background-color: #FFFFFF;
      box-shadow: 0 3px 5px rgba(0,0,0,0.4);
